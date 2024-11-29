@@ -12,7 +12,7 @@ interface FoodItemProps{
 
 const FoodListItem = ({ item }: FoodItemProps): JSX.Element =>{
     return (
-            <View style={Styles.viewContainer}>
+            <View style={Styles.container}>
               <View style={Styles.texContainer}>
                 <Text style={Styles.text}>{item.label}</Text>
                 <Text style={Styles.textInfo}>{item.cal} cal. {item.brand}</Text>
@@ -23,15 +23,8 @@ const FoodListItem = ({ item }: FoodItemProps): JSX.Element =>{
   }
 
 
-const Styles = StyleSheet.create({
+const Styles = StyleSheet.create({  
     container:{
-      backgroundColor:"#fff",
-      flex:1,
-      gap:10,
-      justifyContent:"center",
-      padding:10,
-    }, 
-    viewContainer:{
       alignItems:"center",
       backgroundColor:"gainsboro",
       borderRadius:5,
