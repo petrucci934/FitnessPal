@@ -1,0 +1,18 @@
+type Id {
+  date: DateTime
+  timestamp: Int
+}
+
+type SearchResult {
+  calorias: String
+  descricao: String
+  id: Id
+  quantidade: String
+}
+
+type Query {
+  search(descricao: String): [SearchResult]
+    @rest(
+      endpoint: "https://caloriasporalimentoapi.herokuapp.com/api/calorias/?"
+    )
+}

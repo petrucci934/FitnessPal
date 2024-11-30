@@ -26,7 +26,7 @@ const FoodListItem = ({ item }: FoodItemProps): JSX.Element =>{
 const Styles = StyleSheet.create({  
     container:{
       alignItems:"center",
-      backgroundColor:"gainsboro",
+      backgroundColor:"#f6f6f8",
       borderRadius:5,
       flexDirection:"row",
       gap:5,
